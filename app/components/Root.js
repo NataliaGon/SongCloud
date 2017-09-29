@@ -1,6 +1,6 @@
 
-import Nav from './nav.js';
-import Genres from './genres.js';
+import Explore from './explore-components.js';
+
 
 export default function Root() {
   // const num = 89;
@@ -9,8 +9,8 @@ export default function Root() {
     // <h1>Song Cloud {num}   
     // </h1>,
     <div>
-      <Nav/>
-      <Genres/>
+      <Explore/>
+      
     </div>
       
       
