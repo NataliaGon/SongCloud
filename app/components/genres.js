@@ -1,3 +1,4 @@
+import React from 'react';
 import './reset.css';
 import './style-mobile.css';
 import './genres.scss';

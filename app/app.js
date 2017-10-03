@@ -5,16 +5,22 @@ import './assets/styles/main.scss';
 
 import ReactDOM from 'react-dom';
 import React from 'react';
-
 import Root from './components/Root';
 
 
- ReactDOM.render(<Root/>, document.querySelector('#root'));
+
+
+
+
+
+
+ReactDOM.render(<Root />, document.querySelector('#root'));
 function renderClient(RootComponent) {
-    render(
-      <RootComponent />,
-      
-      document.querySelector('#app'),
-    
-    );
-  }
+  render(
+
+    <RootComponent />,
+
+    document.querySelector('#app'),
+
+  );
+}

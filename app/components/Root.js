@@ -1,5 +1,5 @@
 
-import Explore from './explore-components.js';
+import Nav  from './nav.js';
 
 
 export default function Root() {
@@ -9,7 +9,7 @@ export default function Root() {
     // <h1>Song Cloud {num}   
     // </h1>,
     <div>
-      <Explore/>
+      <Nav/>
       
     </div>
       
