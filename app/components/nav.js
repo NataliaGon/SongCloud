@@ -65,13 +65,13 @@ export default class Nav extends React.Component {
                     <h6 id="site-name">SoundCloud</h6>
                     <span className="icon-caret-down" onClick={this.openSerch.bind(this)}></span>
                     <ul>
-                        <li><NavLink to ="/Explore" href='#'><p>Explore</p></NavLink></li>
+                        <li><NavLink to ="/Explore" href='#'>Explore</NavLink></li>
                         <li><NavLink to ="/Playlist" href='#'>Playlist</NavLink></li>
                     </ul> 
                     <a className= {clientIndClass} href="#">Logout</a>  
                     <Search/>
                 </div>
-                <Route exact path="/" component={Explore} />
+                <Route exact path="/Explore" component={Explore} />
                 <Route path="/Playlist" component={Playlist} />
           
               </div>
