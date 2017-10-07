@@ -1,6 +1,9 @@
+import Nav from './nav/nav.js';
+// import Explore from './explore/explore.js';
 
-import Nav  from './nav.js';
 
+
+import React from 'react';
 
 export default function Root() {
   // const num = 89;
@@ -8,9 +11,10 @@ export default function Root() {
   return (    
     // <h1>Song Cloud {num}   
     // </h1>,
-    <div>
+    <div>  
       <Nav/>
       
+         
     </div>
       
       
