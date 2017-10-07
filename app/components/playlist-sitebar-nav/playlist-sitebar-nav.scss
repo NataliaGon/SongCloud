@@ -1,0 +1,35 @@
+.site-bar-container{
+    width: 200px;
+    height: 100%;    
+    border-right: 1px solid #D8D8D8 ;   
+    float: left;
+
+    hr{    
+        margin-top: 24px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;        
+        border:none;
+        height: 1px;
+        background-color: #D8D8D8;        
+    }
+    ul{
+        margin-left: 10px;
+    }
+    ul li{
+        line-height: 2;
+    }
+    a{
+        font-family: Roboto-Light;
+        text-decoration: none;
+        color: black;        
+    }
+}
+.add-new-playlist{
+    margin-top: 25px;
+    margin-left: 12px;
+    background: #2196F3;
+    color: white;
+    padding: 10px 40px; 
+    border:0;
+}
