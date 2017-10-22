@@ -1,4 +1,5 @@
 import './genres.scss';
+import { NavLink } from 'react-router-dom';
 
 import React from 'react';
 
@@ -6,15 +7,15 @@ export default class Genres extends React.Component {
     render() {
         return ( 
                 <div className= "genres">     
+                <span>Genres:</span>
                 <ul >
-                    <li><a href = "#">Genres:</a></li>
-                    <li><a href = "#">all musik</a></li>
-                    <li><a href = "#">hip-hop rap</a></li>
-                    <li><a href = "#">house</a></li>
-                    <li><a href = "#">rock</a></li>
-                    <li><a href = "#">pop</a></li>
-                    <li><a href = "#">reggaeton</a></li>
-                    <li><a href = "#">dubstep</a></li>
+                    
+                    <li><NavLink to="/Explore/hip-hop">hip-hop</NavLink  ></li>
+                    <li><NavLink to="/Explore/house">house</NavLink  ></li>
+                    <li><NavLink to="/Explore/rock">rock</NavLink  ></li>
+                    <li><NavLink to="/Explore/pop">pop</NavLink  ></li>
+                    <li><NavLink to="/Explore/reggaeton">reggaeton</NavLink  ></li>
+                    <li><NavLink to="/Explore/dubstep">dubstep</NavLink  ></li>
                 </ul>   
                 <i className="fa fa-bars" aria-hidden="true" onClick={this.openMenu.bind(this)}/>
                

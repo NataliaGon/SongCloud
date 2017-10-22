@@ -1,20 +1,30 @@
+
 @media (min-width: 768px){
 .nav-conteiner{ 
     background-color: #2196F3;
     height: 64px;
-    width: 100%;      
-    clear: both;  
-      ul li{
-        float: left; 
-        display: inline;         
-        padding: 22px 10px 22px 10px;        
+    width: 100%;  
+
+    ul {
+        display: inline-flex;
     }
-    ul li:hover{
+    
+      ul li{
+        display: flex;         
+              
+    }
+
+
+    ul a:hover, 
+    .selected{
         background: #1E88E5;        
     }
     li a {
         text-decoration: none;
         color: white;
+        padding: 22px 10px 22px 10px;  
+
+       
     }   
 } 
 .fa-soundcloud{

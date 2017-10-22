@@ -25,12 +25,14 @@ export default class Song extends React.Component {
             'dropdown-open': this.state.heartPressed   
        });
 
+       const data=this.props.data;
+
         return (
             <div>
                 <div className="song-container">
                     <div className="song-clip">
                     </div>
-                    <h4>Name of the song</h4>
+                    <h4>{data.title}</h4>
                     <i className="fa fa-clock-o" aria-hidden="true"/>
                     <i className="fa fa-heart-o" aria-hidden="true" onClick={this.openDropDown.bind(this)}/>
                     

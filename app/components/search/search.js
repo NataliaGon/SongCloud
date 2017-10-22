@@ -5,6 +5,9 @@ import React from 'react';
 
 
 export default class Search extends React.Component {
+   if (this.prop.isVissible===true){
+
+   }
     render() {
         return (           
             <div className = "search"> 
