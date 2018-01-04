@@ -8,8 +8,7 @@ export default class Genres extends React.Component {
         return ( 
                 <div className= "genres">     
                 <span>Genres:</span>
-                <ul >
-                    
+                <ul>                    
                     <li><NavLink to="/Explore/hip-hop">hip-hop</NavLink  ></li>
                     <li><NavLink to="/Explore/house">house</NavLink  ></li>
                     <li><NavLink to="/Explore/rock">rock</NavLink  ></li>

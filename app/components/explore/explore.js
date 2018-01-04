@@ -20,25 +20,25 @@ export default class Explore extends React.Component {
     }
 
     componentDidMount() {
-        const genre = this.props.match.params.genre;
+        const genre = this.props.match.params.genre;// анализ по url
         this.getSong(genre);
-    }
+    }//Компонент примонтирован
 
     componentWillReceiveProps() {
         const genre = this.props.match.params.genre;
         this.getSong(genre);
-    }
+    }//компонент получает новый props
 
     dataHandler(event) {
-        const data = JSON.parse(event.target.responseText);
-        console.log(data);
+        const data = JSON.parse(event.target.responseText);//response - объект DOM содержащий получ. инфо
+       
 
         this.setState({
             songs: data
         });
 
     }
-
+    
 
     getSong(genre) {
         console.log(genre);
@@ -54,11 +54,9 @@ export default class Explore extends React.Component {
 
         return (
             <div>
-
                 <Genres />
-                <h2>Genres: {genre}</h2>
+                <h2 id="title-genres">Genres: {genre}</h2>
                 <SongsList songs={this.state.songs} />
-
             </div>
         );
     }

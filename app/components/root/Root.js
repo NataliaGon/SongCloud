@@ -11,7 +11,7 @@ import FooterPlayer from '../footer-player/footer-player.js';
 import React from 'react';
 
 export default function Root() {
-  // const num = 89;
+ 
 
   return (
     <div>

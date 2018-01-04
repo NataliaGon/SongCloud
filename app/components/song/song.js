@@ -1,9 +1,9 @@
 import './song.scss';
 import classNames from 'classnames/bind';
-
+import { connect } from 'react-redux';
 import React from 'react';
 
-export default class Song extends React.Component {
+class Song extends React.Component {
     
     constructor (props) {
         super(props);
@@ -11,14 +11,15 @@ export default class Song extends React.Component {
             heartPressed: false
         }
     }
-
-    openDropDown(){
-        console.log('2378');
-        this.setState({ isPressed: true });
-    
-
-}
-    
+    openDropDown(){  
+        if(this.state.heartPressed==true){ 
+               
+        this.setState({heartPressed:false}); 
+        }
+        else{
+            this.setState({heartPressed:true});
+        }
+}    
     render() {
         var dropdownClass = classNames({
             'dropdown': true,
@@ -29,15 +30,14 @@ export default class Song extends React.Component {
 
         return (
             <div>
-                <div className="song-container">
-                    <div className="song-clip">
+                <div className="song-container" >
+                    <div className="song-clip"onClick={() => this.props.selectSong(data)}>
                     </div>
-                    <h4>{data.title}</h4>
+                    <div className="song-title">{data.title}</div>
                     <i className="fa fa-clock-o" aria-hidden="true"/>
-                    <i className="fa fa-heart-o" aria-hidden="true" onClick={this.openDropDown.bind(this)}/>
+                    <i className="fa fa-heart" aria-hidden="true" onClick={this.openDropDown.bind(this)}/>
                     
                 </div>
-
 
                 <div className={dropdownClass}>
                     <h3>Add to playlist</h3>
@@ -48,3 +48,22 @@ export default class Song extends React.Component {
         );
     }        
 }
+
+function mapStateToProps(store){
+    return{
+        currentSong: store.currentSong
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        selectSong(data) {
+            dispatch({
+                type: "SELECT_SONG",
+                song: data
+              });
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Song);

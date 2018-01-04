@@ -4,9 +4,7 @@
     height: 40px;    
     background: #DDE4E6;
     display: flex;
-        ul{
-
-        }   
+        ul{           
         li{
             display: inline-block;
             margin-top:10px;   
@@ -20,11 +18,11 @@
             border-bottom: 1px solid rgb(178, 178, 179)
         }
     } 
-.genres li:first-child{
-        font-weight: 500;
-        margin-left: 10px;
-        margin-right: 29px;
+    span{
+        margin: 10px 10px 29px;
+        font-weight: 500;       
     }
+}
 .genres li:last-child{
         margin-right: 0px; 
 }
@@ -38,8 +36,7 @@
     .fa-bars{       
         color: black;
         font-size: 24px;
-        display: block;
-        
+        display: block;        
         margin: 7px;
     }
 }
