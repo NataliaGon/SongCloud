@@ -33,3 +33,17 @@
     padding: 10px 40px; 
     border:0;
 }
+ .playlist-input{
+     border: none;
+     text-align: center;
+     margin-top: 10px;
+     
+ }
+ input::-webkit-input-placeholder { 
+    color: black;
+    font-size: 1.8vw;
+}
+ input::-moz-placeholder {
+    color: black;
+    font-size: 1.8vw;
+}
