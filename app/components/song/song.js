@@ -2,6 +2,7 @@ import './song.scss';
 import classNames from 'classnames/bind';
 import { connect } from 'react-redux';
 import React from 'react';
+import {playlists} from './playlist-sitebar-nav/playlist-sitebar-nav.js';
 
 class Song extends React.Component {
     
@@ -27,6 +28,7 @@ class Song extends React.Component {
        });
 
        const data=this.props.data;
+       const playlists = this.props.playlists;
 
         return (
             <div>
@@ -43,6 +45,7 @@ class Song extends React.Component {
                     <h3>Add to playlist</h3>
                     <a href="#">Create playlist</a>
                     <hr/>
+                    {playlists}
                 </div>
             </div>
         );
@@ -51,7 +54,8 @@ class Song extends React.Component {
 
 function mapStateToProps(store){
     return{
-        currentSong: store.currentSong
+        currentSong: store.currentSong,
+        playlists: store.playlists
     }
 }
 

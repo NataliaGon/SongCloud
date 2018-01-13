@@ -4,7 +4,8 @@ import songReducer from "./reducers/songReducer";
 
 
 const reducer = combineReducers({
-    currentSong: songReducer
+    currentSong: songReducer,
+    playlists: playlistReducer
     
 })
 
